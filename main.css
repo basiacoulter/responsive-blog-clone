@@ -1,0 +1,389 @@
+/* Reset styles */
+    /**
+    * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+    * Richard Clark (http://richclarkdesign.com)
+    * http://cssreset.com
+    */
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, 
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    }
+    body {
+    line-height:1;
+    }
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    nav ul {
+    list-style:none;
+    }
+    blockquote, q {
+    quotes:none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    content:'';
+    content:none;
+    }
+    a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    }
+   
+
+/* Coloring Code */
+[class*="-col"] {
+    background-color: #EEE;
+    position: relative;
+}
+
+/* Responsive Grid */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.grid {
+    max-width: 100%;
+    position: relative;
+}
+.grid, .row, [class*="-col"] {
+    padding: 0;
+    margin: 0;
+}
+.grid:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+  margin-bottom: 1em;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+[class*="-col"] {
+  float: left;
+  margin-right: 1.5%;
+}
+[class*="-col"]:last-child {
+    margin-right: 0;
+}
+.one-col {
+  width: 6.958%;
+}
+
+.two-col {
+  width: 15.41%;
+}
+
+.three-col {
+  width: 23.87%;
+}
+
+.four-col {
+  width: 32.33%;
+}
+
+.five-col {
+  width: 40.79%;
+}
+
+.six-col {
+  width: 49.25%;
+}
+
+.seven-col {
+  width: 57.70%;
+}
+
+.eight-col {
+  width: 66.16%;
+}
+
+.nine-col {
+  width: 74.62%;
+}
+
+.ten-col {
+  width: 83.08%;
+}
+
+.eleven-col {
+  width: 91.54%;
+}
+
+.twelve-col {
+  width: 100%;
+}
+.one-offset {
+  margin-left: 8.458%;
+}
+
+.two-offset {
+  margin-left: 16.91%;
+}
+
+.three-offset {
+  margin-left: 25.37%;
+}
+
+.four-offset {
+  margin-left: 33.83%;
+}
+
+.five-offset {
+  margin-left: 42.29%;
+}
+
+.six-offset {
+  margin-left: 50.75%;
+}
+
+.seven-offset {
+  margin-left: 59.20%;
+}
+
+.eight-offset {
+  margin-left: 67.66%;
+}
+
+.nine-offset {
+  margin-left: 76.12%;
+}
+
+.ten-offset {
+  margin-left: 84.58%;
+}
+
+.eleven-offset {
+  margin-left: 91.54%;
+}
+
+@media all and (max-width: 768px) {
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0;
+  }
+
+  [class*="-offset"] {
+    margin-left: 0;
+  }
+  .row {
+    margin: 0;
+  }
+  .top-social {
+    display:none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    margin-right: 8.458%;
+    margin-left: 6.958%;
+  }
+}
+
+/* Structure */
+body {
+  font-family: 'Lato Regular', sans-serif;
+  color: #666;
+  background: url(img/body-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: scroll;
+}
+body p {
+  margin-bottom: 1em;
+}
+body p:last-child {
+  margin-bottom: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 4em;
+  background-color: rgba(95, 118, 133, 0.8);
+}
+.top-social {
+   float: right;
+   color: #fff;
+   margin-top: 30px;
+   margin-right: 30px;
+}
+ul.social li {
+  display: inline-block;
+}
+aside {
+  width: 270px;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  background-color: #333;
+}
+.topics {
+  padding: 1.2em 1.2em 1.2em 2.2em;
+  height: 350px;
+  overflow: scroll;
+}
+.container {
+  margin-top: 100px;
+}
+.pagination {
+  text-align: center;
+  padding: 0.4em 0.5em;
+  width: 100%;
+  background-color: #FFF200;
+  text-transform: uppercase;
+}
+article {
+  padding: 1em 3em;
+  margin-bottom: 2em;
+}
+.bottom-social {
+    padding: 0 0.5em 1em 0.5em;
+}
+.bottom-social ul {
+  float: left;
+  margin-bottom: 0.5em;
+}
+aside p {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-family: 'Lato Light', sans-serif;
+}
+hgroup {
+  background-color: #FFF200;
+  padding: 1.2em;
+}
+hgroup a {
+  color: #6D98A8;
+  cursor: pointer;
+}
+hgroup a:hover {
+  text-decoration: underline;
+}
+.logo h1 {
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 150px;
+  float: left;
+}
+.logo h1:hover {
+  color: #FFF200;
+}
+h2 {
+  font-family: 'Lato Bold', sans-serif;
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-size: 1.275em;
+  color: #333;
+}
+img {
+  padding: 1.5%;
+  border: 1px solid #ccc;
+}
+img.thumb {
+  width: 32.33%;
+}
+hr {
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+}
+
+.pagination a, .bottom-social a {
+  color: #666;
+}
+.left-arrow, .right-arrow {
+  display: inline-block;
+  font-size: 2em;
+  margin-top: -0.4em;
+}
+.left-arrow {
+  float: left;
+}
+.right-arrow {
+  float: right;
+}
+
+li.share {
+   font-family: 'Lato Light', sans-serif;
+   text-transform: uppercase;
+   font-size: 0.7em;
+}
+li.exit {
+  font-family: 'Lato LightItalic', sans-serif;
+    text-transform: uppercase;
+  }
+.floatright {
+  float: right;
+  margin-left: 1.5%;
+}
+@font-face{
+  font-family:'Lobster';
+  src:url(fonts/Lobster/Lobster.ttf);
+}
+@font-face{
+  font-family:'Lato Bold';
+  src:url(fonts/Lato/Lato-Bold.ttf);
+  font-weight:700;
+}
+@font-face{
+  font-family:'Lato Regular';
+  src:url(fonts/Lato/Lato-Regular.ttf);
+  font-weight:400;
+}
+@font-face{
+  font-family:'Lato Light';
+  src:url(fonts/Lato/Lato-Light.ttf);
+  font-weight:300;
+}
+@font-face{
+  font-family:'Lato LightItalic';
+  src:url(fonts/Lato/Lato-LightItalic.ttf);
+  font-weight:300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
