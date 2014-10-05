@@ -209,6 +209,7 @@
 
 /* Structure */
 body {
+  position: relative;
   font-family: 'Lato Regular', sans-serif;
   color: #666;
   background: url(img/body-background.jpg) no-repeat center center fixed;
@@ -240,15 +241,15 @@ ul.social li {
 }
 aside {
   width: 270px;
-  position: fixed;
-  top: 100px;
+  position: absolute;
+  top: 0;
   left: 100px;
   background-color: #333;
 }
 .topics {
-  padding: 1.2em 1.2em 1.2em 2.2em;
+  padding: 0 1.2em 0 2.2em;
   height: 350px;
-  overflow: scroll;
+  overflow: auto;
 }
 .container {
   margin-top: 100px;
@@ -266,9 +267,18 @@ article {
 }
 .bottom-social {
     padding: 0 0.5em 1em 0.5em;
+    width: 80%;
+}
+.left, .right {
+  width: 20%;
+}
+.left, .bottom-social {
+  float: left;
+}
+right {
+  float: right;
 }
 .bottom-social ul {
-  float: left;
   margin-bottom: 0.5em;
 }
 aside p {
@@ -286,6 +296,10 @@ hgroup a {
 }
 hgroup a:hover {
   text-decoration: underline;
+}
+aside p.arrow-up, aside p.arrow-down {
+  background-color: #121212;
+  margin: 0;
 }
 .logo h1 {
   font-size: 3em;
