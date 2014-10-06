@@ -243,7 +243,7 @@ aside {
   width: 270px;
   position: absolute;
   top: 0;
-  left: 100px;
+  left: 30px;
   background-color: #333;
 }
 .topics {
@@ -267,39 +267,27 @@ article {
 }
 .bottom-social {
     padding: 0 0.5em 1em 0.5em;
-    width: 80%;
 }
-.left, .right {
-  width: 20%;
-}
-.left, .bottom-social {
+.left {
   float: left;
 }
-right {
+.right {
+  float: right;
+}
+.left-arrow, .right-arrow {
+  display: inline-block;
+  font-size: 2em;
+  margin-top: -0.4em;
+}
+.left-arrow {
+  float: left;
+}
+.right-arrow {
   float: right;
 }
 .bottom-social ul {
-  margin-bottom: 0.5em;
-}
-aside p {
-  text-transform: uppercase;
-  font-size: 0.7em;
-  font-family: 'Lato Light', sans-serif;
-}
-hgroup {
-  background-color: #FFF200;
-  padding: 1.2em;
-}
-hgroup a {
-  color: #6D98A8;
-  cursor: pointer;
-}
-hgroup a:hover {
-  text-decoration: underline;
-}
-aside p.arrow-up, aside p.arrow-down {
-  background-color: #121212;
-  margin: 0;
+  display: inline-block;
+  margin-left: 20%;
 }
 .logo h1 {
   font-size: 3em;
@@ -313,12 +301,61 @@ aside p.arrow-up, aside p.arrow-down {
 .logo h1:hover {
   color: #FFF200;
 }
+aside p {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-family: 'Lato Light', sans-serif;
+}
+aside .arrow-up, aside .arrow-down {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+aside p.arrow-up, aside p.arrow-down {
+  background-color: #121212;
+  margin: 0;
+}
+aside li {
+  font-size: 0.9em;
+  margin-bottom: 2em;
+  line-height: 1.4em;
+}
+aside li:first-child {
+  margin-top: 2em; 
+}
+aside a {
+  color: #ccc;
+}
+aside li.current a {
+  color: #FFF200;
+}
+aside a:hover {
+  color: #6D98A8;
+}
+hgroup {
+  background-color: #FFF200;
+  padding: 1.2em;
+}
+hgroup a {
+  color: #6D98A8;
+  cursor: pointer;
+}
+hgroup a:hover {
+  text-decoration: underline;
+}
 h2 {
   font-family: 'Lato Bold', sans-serif;
   margin-bottom: 1em;
   margin-top: 0;
   font-size: 1.275em;
   color: #333;
+}
+article a {
+  background-color:#FFF200;
+  color: #666;
+}
+article a:hover {
+  text-decoration: underline;
 }
 img {
   padding: 1.5%;
@@ -331,22 +368,9 @@ hr {
   border-bottom: 1px solid #ccc;
   border-top: none;
 }
-
 .pagination a, .bottom-social a {
   color: #666;
 }
-.left-arrow, .right-arrow {
-  display: inline-block;
-  font-size: 2em;
-  margin-top: -0.4em;
-}
-.left-arrow {
-  float: left;
-}
-.right-arrow {
-  float: right;
-}
-
 li.share {
    font-family: 'Lato Light', sans-serif;
    text-transform: uppercase;
