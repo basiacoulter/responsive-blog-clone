@@ -375,10 +375,12 @@ li.share {
    font-family: 'Lato Light', sans-serif;
    text-transform: uppercase;
    font-size: 0.7em;
+   margin-right: 1em;
 }
 li.exit {
   font-family: 'Lato LightItalic', sans-serif;
-    text-transform: uppercase;
+  text-transform: uppercase;
+  margin-left: 1em;
   }
 .floatright {
   float: right;
